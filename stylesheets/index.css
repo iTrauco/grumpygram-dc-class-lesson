@@ -9,11 +9,14 @@ html, body {
     width: 100%;
 }
 .picture-frame {
-    width: 150px;
-    display: inline-block
+    width:  80%;
+    border: 2px solid cornflowerblue;
+    height: 200px;
+    display: flex; 
+    align-items: center;
 }
 .picture-frame img {
-    width: 100%;
+    max-width: 50%;
 }
 #one {
     left: 10px;
@@ -25,3 +28,22 @@ html, body {
 #three {
     left:100px;
 }
+
+.pug-playground {
+    border: 5px solid gold;
+    display: flex;
+    min-height: 300px
+
+    
+    flex-direction: column;
+    padding-bottom: 0px;
+    padding-top: 0px;
+
+    justify-content: flex-start; /*lineup on main axis*/
+    align-items: center;
+
+
+     /*lineup cross axis*/
+     flex-wrap: wrap;
+}
+

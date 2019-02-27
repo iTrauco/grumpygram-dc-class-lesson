@@ -47,3 +47,14 @@ html, body {
      flex-wrap: wrap;
 }
 
+@media screen and (min-width: 500px) {
+    body{
+        background: red;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    body{
+        background: purple;
+    }
+}

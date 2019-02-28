@@ -15,29 +15,38 @@ html, body {
     display: flex; 
     align-items: center;
 }
+/* Scale the o,age up if the picture-frame is being hovered */
+.picture-frame:hover img{ 
+    transform: scale(1.10);
+    opacity: 10;
+}
+
+
 .picture-frame img {
     max-width: 50%;
 }
 #one {
-    left: 10px;
+    justify-content: center;
     }
 
 #two {
-    left: 200px,
+    justify-content: center;
 }
 #three {
-    left:100px;
+    justify-content: center;
+    max-height: 25%;
 }
 
 .pug-playground {
     border: 5px solid gold;
     display: flex;
-    min-height: 300px
+    min-height: 300px;
 
     
     flex-direction: column;
     padding-bottom: 0px;
     padding-top: 0px;
+    padding: 0px;
 
     justify-content: flex-start; /*lineup on main axis*/
     align-items: center;
@@ -48,13 +57,29 @@ html, body {
 }
 
 @media screen and (min-width: 500px) {
-    body{
+    .body{
         background: red;
     }
+    .picture-frame{
+        width: 33%;
+        margin-top: 20px;
+        
+    }
+    .pug-playground{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
 }
-
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
     body{
-        background: purple;
+        background: blue;
+    }
+
+    .logo-text {
+        font-size: 32px;
+        text-align: center;
     }
 }

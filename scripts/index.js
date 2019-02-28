@@ -6,7 +6,7 @@ const targetElements = document.querySelectorAll("[data-target]"); // const is a
 function respondToClick(event) {
     console.log('test click line 1');
    
-    event.target.parentElement.classList.toggle("big");
+    event.target.classList.toggle("big");
 }
 function attachClickHandler(oneElement) {
     oneElement.addEventListener("click", respondToClick);

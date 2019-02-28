@@ -16,12 +16,13 @@ html, body {
     align-items: center;
 }
 /* Scale the o,age up if the picture-frame is being hovered */
+.picture-frame:hover {
+    outline: 5px solid red;
+}
 .picture-frame:hover img{ 
     transform: scale(1.10);
     opacity: 10;
 }
-
-
 .picture-frame img {
     max-width: 50%;
 }
@@ -34,14 +35,13 @@ html, body {
 }
 #three {
     justify-content: center;
-    max-height: 25%;
+    align-items: center;
 }
 
 .pug-playground {
     border: 5px solid gold;
     display: flex;
     min-height: 300px;
-
     
     flex-direction: column;
     padding-bottom: 0px;
@@ -50,8 +50,6 @@ html, body {
 
     justify-content: flex-start; /*lineup on main axis*/
     align-items: center;
-
-
      /*lineup cross axis*/
      flex-wrap: wrap;
 }

@@ -3,12 +3,11 @@ const targetElements = document.querySelectorAll("[data-target]"); // const is a
 // when we click any picture-frame class we seen an enlarged version of image inside of .picture-frame
 //
 
-function respondToClick() {
+function respondToClick(event) {
     console.log('test click line 1');
-    console.log('test click line 2');
-    console.log('test clicl line 3');
+   
+    event.target.parentElement.classList.toggle("big");
 }
-
 function attachClickHandler(oneElement) {
     oneElement.addEventListener("click", respondToClick);
 }

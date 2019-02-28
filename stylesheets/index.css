@@ -81,3 +81,10 @@ html, body {
         text-align: center;
     }
 }
+
+.picture-frame.big img {
+        outline: 5px solid yellow;
+        transform: scale(2.0);
+        opacity: 1.0;
+        z-index: 4;
+}
